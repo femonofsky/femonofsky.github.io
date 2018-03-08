@@ -9,17 +9,17 @@ var getAll = function(selector, scope) {
   return scope.querySelectorAll(selector);
 };
 
-var request = new Request(
-  "https://api.spotify.com/v1/me/player/recently-played?type=track&limit=1&after=1484811043508",
-  {
-    headers: new Headers({
-      "Content-Type": "application/json",
-      Accept: "application/json",
-      Authorization:
-        "Bearer BQA2q5-59GjdNVMfBT7wkgxqrbzv7_6CsXzM-mMZ0GYvMzO0gCM8tlPqYiZ0VKU_nWe27GTTpOaW5rEaLalBf0b3V-IDsqpZ448lVJQiy_QwHtHxCYcn6hAfBZMbvSNFWfQrMeHQgCK6rkRqyhOK9Dg" //env("Spotify_Auth")
-    })
-  }
-);
+// var request = new Request(
+//   "https://api.spotify.com/v1/me/player/recently-played?type=track&limit=1&after=1484811043508",
+//   {
+//     headers: new Headers({
+//       "Content-Type": "application/json",
+//       Accept: "application/json",
+//       Authorization:
+//         "Bearer BQA2q5-59GjdNVMfBT7wkgxqrbzv7_6CsXzM-mMZ0GYvMzO0gCM8tlPqYiZ0VKU_nWe27GTTpOaW5rEaLalBf0b3V-IDsqpZ448lVJQiy_QwHtHxCYcn6hAfBZMbvSNFWfQrMeHQgCK6rkRqyhOK9Dg" //env("Spotify_Auth")
+//     })
+//   }
+// );
 
 const interests = get(".interests");
 
